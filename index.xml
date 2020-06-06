@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DevFable - Develop Your Story</title>
+    <link>https://devfable.com/</link>
+    <description>Recent content on DevFable - Develop Your Story</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://devfable.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About | DevFable - Helping Your Development Story</title>
+      <link>https://devfable.com/about/</link>
+      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devfable.com/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact | DevFable - Helping Your Development Story</title>
+      <link>https://devfable.com/contact/</link>
+      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devfable.com/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Portfolio | DevFable - Helping Your Development Story</title>
+      <link>https://devfable.com/portfolio/</link>
+      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://devfable.com/portfolio/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
