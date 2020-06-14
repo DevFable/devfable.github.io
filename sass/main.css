@@ -38,23 +38,23 @@
     font-size: 24px;
     padding: 20px 40px; }
   .button-primary {
-    background-color: #007fff;
-    border-color: #007fff;
+    background-color: #333333;
+    border-color: #333333;
     color: white; }
     .button-primary:hover {
       background-color: white;
-      color: #007fff; }
+      color: #333333; }
   .button-outline-white {
     border-color: white;
     color: white; }
     .button-outline-white:hover {
       background-color: white;
-      color: #007fff; }
+      color: #333333; }
   .button-outline-primary {
-    border-color: #007fff;
-    color: #007fff; }
+    border-color: #333333;
+    color: #333333; }
     .button-outline-primary:hover {
-      background-color: #007fff;
+      background-color: #333333;
       color: white; }
   .button-outline-dark {
     border-color: #222222;
@@ -133,6 +133,13 @@
     font-size: 48px; }
   .section-top {
     padding-top: 80px; }
+  .section-anti-nav {
+    padding-top: 300px;
+    margin-top: -83px; }
+    @media screen and (max-width: 768px) {
+      .section-anti-nav {
+        padding-top: 180px;
+        margin-top: -68px; } }
   .section-primary {
     background-color: #007fff;
     color: white; }
@@ -141,15 +148,16 @@
   .section-gray {
     background-color: #f8f9fa; }
   .section-banner {
-    background-color: #007fff;
+    height: 100vh;
+    background-color: #333333;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: #e5f2ff;
+    color: white;
     position: relative;
     overflow: hidden; }
     .section-banner * {
-      color: #e5f2ff; }
+      color: white; }
     .section-banner .banner-bg {
       position: absolute;
       top: 0;
@@ -158,8 +166,8 @@
       width: 100%;
       object-fit: cover; }
     .section-banner .headline {
-      font-size: 56px;
-      line-height: 70px;
+      font-size: 80px;
+      line-height: 100px;
       font-weight: 600; }
       @media screen and (max-width: 768px) {
         .section-banner .headline {
@@ -189,6 +197,14 @@
 
 .main-nav {
   background-color: white; }
+  .main-nav.nav-transparent {
+    background-color: transparent; }
+    .main-nav.nav-transparent .brand {
+      background-color: transparent; }
+    .main-nav.nav-transparent a.nav-link, .main-nav.nav-transparent button {
+      color: white; }
+      .main-nav.nav-transparent a.nav-link:hover, .main-nav.nav-transparent a.nav-link:focus, .main-nav.nav-transparent button:hover, .main-nav.nav-transparent button:focus {
+        color: #cccccc; }
   .main-nav a.nav-link {
     color: black;
     font-size: 14px;
@@ -198,7 +214,7 @@
     text-transform: uppercase;
     transition: all .25s ease; }
     .main-nav a.nav-link:hover {
-      color: #007fff; }
+      color: #333333; }
   .main-nav .navbar-brand {
     background-color: #222222;
     color: white;
@@ -211,7 +227,7 @@
     text-transform: none;
     transition: all .25s ease; }
     .main-nav .navbar-brand:hover {
-      background-color: #007fff; }
+      background-color: #333333; }
 
 .portfolio-item {
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2); }

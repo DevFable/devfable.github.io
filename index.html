@@ -17,10 +17,12 @@
         
         <link rel="stylesheet" href="/sass/main.css">
     </head>
-        <body><nav class="navbar navbar-expand-lg sticky-top main-nav">
+        <body>
+<nav class="navbar navbar-expand-lg sticky-top main-nav nav-transparent" id="mainNav">
+
     <div class="container">
         <a href="/" class="navbar-brand brand">DevFable</a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="navToggle" class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
             <i class="las la-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbars">
@@ -42,10 +44,10 @@
     </div>
 </nav>
 <div id="content">
-<section class="section section-banner">
+<section class="section section-banner section-anti-nav">
   <picture>
-    <source srcset="/img/banner.webp" type="image/webp">
-    <img src="/img/banner.jpg" alt="" class="banner-bg" draggable="false">
+    <source srcset="/img/banner-black.webp" type="image/webp">
+    <img src="/img/banner-black.jpg" alt="" class="banner-bg" draggable="false">
   </picture>
   <div class="container">
     <div class="row">
@@ -61,7 +63,7 @@
           We are an Indonesian software development company (Software House) based in Jakarta with expertise in providing digital solutions for small businesses or organizations.
         </p>
         <div>
-          <a href="/contact" class="btn button button-outline-white">Let's talk</a>
+          <a href="/contact" class="btn button button-lg button-outline-white">Let's talk</a>
         </div>
       </div>
     </div>
@@ -277,6 +279,17 @@
 
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha256-+izcH23qgte+aiGZRxk63BxGUyoQrAQZVoH2zKU9usM=" crossorigin="anonymous"></script>
 <script>
+let scrolled = false;
+window.onscroll = () => {
+  if (!scrolled) {
+    document.getElementById('mainNav').classList.remove('nav-transparent');
+    scrolled = true;
+  }
+};
+document.getElementById('navToggle').onclick = () => {
+  document.getElementById('mainNav').classList.remove('nav-transparent');
+}
+
 window.addEventListener('DOMContentLoaded', () => {
   var options = {
     strings: [
@@ -337,7 +350,15 @@ window.addEventListener('DOMContentLoaded', () => {
                 <p class="brand-subtitle">Helping Your Development Story</p>
             </div>
             <div class="col-lg-3 mb-5 mb-lg-0 text-center text-lg-left">
-                <h3>Address</h3>
+                <h3>Contact</h2>
+                <p>
+                    Email: hi@devfable.com
+                    <br>
+                    Phone/WA: +62 813 1607 6165
+                </p>
+            </div>
+            <div class="col-lg-3 mb-5 mb-lg-0 text-center text-lg-left">
+                <h3>Headquarter</h3>
                 <address>
                     Jl. Jembatan Dua
                     <br>
@@ -349,16 +370,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     <br>
                     Indonesia
                 </address>
-            </div>
-            <div class="col-lg-3 mb-5 mb-lg-0 text-center text-lg-left">
-                <h3>Contact</h2>
-                <p>
-                    Email: hi@devfable.com
-                    <br>
-                    Phone/WA: +62 813 1607 6165
-                </p>
-            </div>
-            <div class="col-lg-3 text-center text-lg-left">
+            </div>            <div class="col-lg-3 text-center text-lg-left">
                 <h3>Useful Links</h2>
                 <ul class="nav flex-column">
                     <li class="nav-item">
